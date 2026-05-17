@@ -5,11 +5,13 @@ function ImageToggle({ src, alt, stats, setStats, itemStats, checkboxes, clear }
   const [isSelected, setIsSelected] = useState(false);
 
   function changeStats(x){
-    let newStats = [...stats]
-    for(let e of itemStats){
-      newStats[e] += x
-    }
-    setStats(newStats)
+    setStats(prev => {
+      const newStats = [...prev]
+      for(let e of itemStats){
+        newStats[e] += x
+      }
+      return newStats
+    })
   }
 
 
