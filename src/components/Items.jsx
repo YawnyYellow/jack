@@ -4,8 +4,10 @@ const starter = [
     ["dring", [3, 8]],
     ["world", [8, 9, 16]],
     ["dblade", [0, 8, 10]],
+    ["dbow", [0, 1, 19], "doran's bow"],
     ["cull", [0]],
     ["dshield", [8, 9]],
+    ["dhelm", [4, 14, 8], "doran's helm"],
 ];
 
 const basic = [
@@ -30,11 +32,11 @@ const boots = [
     ["boots", [17]],
     ["berserker", [1, 17]],
     ["swifties", [17]],
-    ["symbiotic", [17]],
     ["sorcs", [17, 12]],
     ["lucidity", [2, 17]],
     ["plated", [4, 17]],
     ["mercs", [14, 17, 20]],
+    ["gluttonous", [17, 19], "gluttonous greaves"],
 ];
 
 const epic = [
@@ -102,7 +104,6 @@ const epic = [
     ["winters", [8, 15, 2]],
     ["frozen", [4, 15, 2]],
     ["serpants", [0, 11]],
-    ["trail", [8, 4, 18]],
     ["roa", [3, 8, 15]],
     ["rylais", [3, 8]],
     ["rocketbelt", [3, 8, 2]],
@@ -116,14 +117,13 @@ const epic = [
     ["horizon", [3, 2]],
     ["dawncore", [3, 7, 16]],
     ["youmuu", [0, 11]],
-    ["opportunity", [0, 11, 18]],
     ["sunfire", [8, 4, 2]],
     ["randuin", [8, 4]],
     ["thornmail", [8, 4]],
     ["blackfire", [3, 2, 15]],
     ["edge", [0, 11, 8]],
     ["wits", [1, 14, 20]],
-    ["statikk", [0, 1, 18]],
+    ["statikk", [0, 3, 1, 18]],
     ["eclipse", [0, 2]],
     ["chempunk", [0, 8, 2]],
     ["hollow", [8, 14, 2, 9]],
@@ -160,7 +160,7 @@ const epic = [
     ["zephyr", [1, 17]],
     ["kraken", [0, 1, 18]],
     ["maw", [0, 2, 14]],
-    ["shojin", [0, 8, 2]],
+    ["shojin", [0, 8]],
     ["sundered", [0, 8, 2]],
     ["warmogs", [8, 9, 18]],
     ["shadowflame", [3, 12]],
@@ -183,6 +183,16 @@ const epic = [
     ["ie", [0, 6]],
     ["blood", [0, 10]],
     ["rabadon", [3]],
+    ["actualizer", [3, 2, 15], "actualizer"],
+    ["bandlepipes", [2, 4, 14, 8], "bandlepipes"],
+    ["bastionbreaker", [0, 2, 11], "bastionbreaker"],
+    ["bloodletter", [3, 2, 8], "bloodletter's curse"],
+    ["duskdawn", [3, 2, 1, 8], "dusk and dawn"],
+    ["endless", [0, 19, 20], "endless hunger"],
+    ["fiendhunter", [1, 6, 18], "fiendhunter bolts"],
+    ["hexoptics", [0, 6], "hexoptics c44"],
+    ["protoplasm", [2, 8], "protoplasm harness"],
+    ["circlet", [8, 15, 16, 7], "whispering circlet"],
 ];
 
 export { starter, basic, boots, epic, legendary };

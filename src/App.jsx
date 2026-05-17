@@ -6,10 +6,15 @@ import { starter, basic, boots, epic, legendary } from "./components/Items";
 function App() {
     const [stats, setStats] = useState(new Array(21).fill(0));
     const [numStats, setNumStats] = useState(0);
+    const [clear, setClear] = useState(0);
     const [checkboxes, setCheckboxes] = useState({
         BORDERS: true,
         GRAYSCALE: true, 
     });
+
+    function handleReset() {
+        setClear((c) => c + 1);
+    }
 
     let statNames = [
         "Attack damage",
@@ -55,6 +60,7 @@ function App() {
                 setStats={setStats}
                 itemStats={item[1]}
                 checkboxes={checkboxes}
+                clear={clear}
             />
         );
     }
@@ -93,6 +99,9 @@ function App() {
                 />
                 Grayscale
             </label>
+            <button id="resetBtn" onClick={handleReset}>
+                Reset all
+            </button>
 
             <div id="statContainer">{statNames.map(statMap)}</div>
             <p id="numStats">

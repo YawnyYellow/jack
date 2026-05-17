@@ -17,6 +17,7 @@
 
 #root {
     background-color: black;
+    padding-bottom: 140px;
     /* width: 100vw;
     height: 100vh;
     overflow: auto; */
@@ -68,6 +69,31 @@ p{
 .icon{
     width: 15px;
     height: 15px;
+}
+
+#resetBtn {
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+    padding: 20px 40px;
+    background-color: #222;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 2em;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.7);
+}
+
+#resetBtn:hover {
+    background-color: #444;
+    border-color: #888;
+}
+
+#resetBtn:active {
+    background-color: #111;
 }
 
 
